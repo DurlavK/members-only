@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+  h1 Create New Message 
+  form(method='POST')
+    div(class='flex flex-col')
+      label(for="title") Title 
+      input#title(class='border py-2 px-1 rounded-sm' placeholder='Message Title' type='text' name='title' required=true)  
+      label(for="body") Body 
+      textarea#body(class='border py-2 px-1 rounded-sm' placeholder='Message Body' type='text' name='body' required=true)  
+      button(type='submit' class='px-2 py-1 bg-blue-400 rounded-md mt-4') Create message

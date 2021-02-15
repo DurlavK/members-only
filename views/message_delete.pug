@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  h1 Are you sure to delete this message
+  p #{message.title}
+  form(method='POST' action='')
+    div
+      input#id(type='hidden',name='id', required='true', value=message._id )
+
+    button(type='submit') Delete

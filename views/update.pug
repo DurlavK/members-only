@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  div(class='flex flex-col items-center')
+    p update user page
+    form(method='POST' action='')
+      div
+        input(type="text" placeholder='admin pass key' name='admin')
+        input(type="text" placeholder='membership pass key' name='membership')
+      button(type='submit') Update

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div(class='max-w-7xl mx-auto')
+    div(class='flex justify-between mt-1 items-center')
+      div 
+        h1(class='text-2xl') Members-Only
+      div
+        a(href='/user/create' class='border rounded-lg py-1 px-2 bg-blue-500 shadow-lg hover:bg-gray-500 text-white') Sign Up
+        a(href='/user/login' class='border rounded-lg py-1 px-2 bg-green-500 shadow-lg hover:bg-gray-500 text-white' ) Log In
+    div(class='flex flex-col')
+      each message in messages
+        div(class='bg-gray-100 p-2 mt-2')
+          p(class='') #{message.title}
+          p(class='text-sm') #{message.body}
